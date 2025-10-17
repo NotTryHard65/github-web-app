@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.user-nickname p {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  text-align: left;
+  margin: 0px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.reviews-primary {
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.45);
+  width: 50%;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.reviews-secondary {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 20px;
+  margin-top: 20px;
+}
+
+.user-avatar img{
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+
+.user-text-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 90%;
+  padding: 0px 50px;
+}
+
+.user-text-review p{
+  font-family: var(--font-primary);
+  
+  margin: 0;
+  font-size: 16px;
+  width: 100%;
+}
+
+

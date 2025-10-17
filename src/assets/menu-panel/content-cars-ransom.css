@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.cars-grid {
+  margin-top: 80px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 350px);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px; 
+}
+
+.card {
+  border: 1px solid rgb(222, 221, 221);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  margin-top: 10px;
+  width: 330px;
+  height: 260px;
+  border-radius: 5px;
+  object-fit: cover;
+
+}
+
+.card-title {
+  width: 100%;
+}
+
+.card-title p {
+  font-family: var(--font-primary);
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+.description p{
+  font-family: var(--font-primary);
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 17px;
+  color: rgb(112, 112, 112);
+}
+
+.description span {
+  font-family: var(--font-primary);
+  font-size: 22px;
+}
+
+.price-content {
+  width: 100%;
+  background-color: rgb(154, 191, 248);
+}
+
+.price-content p {
+  font-family: var(--font-primary);
+  margin: 0;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+}
+
+.buy-btn {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 50px;
+}
+
+.buy-btn button {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  margin-left: 6px;
+  padding: 10px 20px;
+  background-color: rgb(54, 96, 232);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-btn button:hover {
+  background-color:rgb(42, 76, 189)
+}
+
+.btn-move {
+  margin-top: 5px;
+  width: 91.19%;
+  display: flex;
+  justify-content:  right;
+  align-items: center;
+}
+
+.btn-move button {
+  margin-right: 3px;
+  padding: 6px 14px;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease ;
+  transition: transform 0.4s ease;
+  border: 1px solid black;
+  border-radius: 3px;
+
+}
+
+.btn-move button:hover {
+  background-color: rgb(208, 208, 208);
+  transform: translateY(-3px);
+
+}
+
+
+
