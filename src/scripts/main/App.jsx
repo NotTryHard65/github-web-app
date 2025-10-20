@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import './App.css'
-import BuildHeader from './assets/header/header.jsx'
-import BuildContainerMenu from './assets/menu-panel/build_menu.jsx'
+import '../../assets/styles/App.css'
+import BuildHeader from './header.jsx'
+import BuildContainerMenu from './base.jsx'
 
 function App() {
 

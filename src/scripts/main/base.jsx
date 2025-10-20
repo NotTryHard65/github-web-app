@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './content-reviews.css'
-import './build_menu.css'
-import './content-cars-ransom.css'
-import './services-provides.css'
+import '../../assets/styles/content-reviews.css'
+import '../../assets/styles/base.css'
+import '../../assets/styles/content-cars-ransom.css'
+import '../../assets/styles/services-provides.css'
 
 function Rating({user_nickname}) {
   return (<p>{user_nickname} {'⭐'.repeat(5)}</p>);
@@ -30,7 +30,7 @@ function BuildContentRewies({nickname}) {
   ) 
 }
 
- function BuildContentCarsRansom({path, title, type, km, cm3, manufacture_year, price}) {
+function BuildContentCarsRansom({path, title, type, km, cm3, manufacture_year, price}) {
   return(
     <div className="card">
       <img src={path} alt="Изображение машины"/>
@@ -60,7 +60,6 @@ function BuildContainerMenu() {
     const contents = {
         'reviews': (
           <div class="flex-container">
-            <h2>Отзывы о нашей компании</h2>
             <BuildContentRewies nickname="Даниил"></BuildContentRewies>
             <BuildContentRewies nickname="Александр"></BuildContentRewies>
             <BuildContentRewies nickname="Анастасия"></BuildContentRewies>
@@ -117,14 +116,13 @@ function BuildContainerMenu() {
         'about_us': (
           <div>
             <div>
-              <h2>Мы Carvity</h2>
+              <h2>CARVITY</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
             </div>
           </div>
         ),
         'services_provided': (
           <div class="services-container">
-            <h2>Мы предоставляем следующие услуги:</h2>
             <ol>
               <li>Мойка автомобиля</li>
               <li>Техническое обслуживание</li>
